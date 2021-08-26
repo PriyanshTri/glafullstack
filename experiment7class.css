@@ -1,0 +1,31 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(./images/office.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.menu {
+  background-color: rgb(50, 50, 50);
+}
+.menu ul {
+  list-style: none;
+  display: inline-flex;
+}
+
+.menu ul li {
+  margin-left: 15px;
+  width: 150px;
+  margin: 15px;
+  padding: 15px;
+}
+.menu ul li div a {
+  text-decoration: none;
+  color: white;
+  font-size: large;
+}
