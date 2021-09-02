@@ -34,7 +34,7 @@ h2 {
 }
 #sec-1 {
   margin-top: 10px;
-  height: 200px;
+  height: 40vh;
 }
 #sec-1 h2 {
   padding-top: 10px;
@@ -42,13 +42,14 @@ h2 {
 }
 #box {
   text-align: center;
+  margin-left: 25px;
 }
 
 #sec-1 .icon {
-  margin: 10px 4px 10px;
-  width: 135px;
-  height: 135px;
-  display: inline-block;
+  margin: 10px 60px 10px;
+  width: 180px;
+  height: 180px;
+  display: inline-flex;
   background-color: orange;
   border-radius: 100%;
 }
@@ -63,7 +64,7 @@ h2 {
 }
 #box1,
 #box2 {
-  height: 300px;
+  height: 50vh;
   width: 44vw;
   margin-left: 2vw;
 }
@@ -76,7 +77,7 @@ h2 {
 }
 #box2 .artical {
   background-color: chocolate;
-  margin-bottom: 15px;
+  margin-bottom: 18px;
   padding: 31px 0px;
   color: white;
 }
@@ -89,9 +90,9 @@ h2 {
 }
 .box .innerbox {
   display: inline-flex;
-  margin: 0px 10px 0px;
-  width: 125px;
-  height: 175px;
+  margin: 0px 50px 0px;
+  width: 150px;
+  height: 200px;
   background-color: orangered;
 }
 #footer h2 {
@@ -101,7 +102,7 @@ h2 {
 }
 
 #footer {
-  margin-left: 20px;
+  margin-left: 45px;
   width: 91vw;
   height: 50px;
   background-color: lightpink;
