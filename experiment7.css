@@ -1,0 +1,109 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+#header {
+  margin-top: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 92vw;
+  height: 50px;
+  background-color: gray;
+}
+#header h2 {
+  color: white;
+  padding-top: 10px;
+  text-align: center;
+}
+#banner {
+  height: 80vh;
+  background-color: skyblue;
+  width: 92vw;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 10px;
+}
+#banner h2 {
+  padding-top: 35vh;
+  color: white;
+  text-align: center;
+}
+#sec-1 {
+  margin-top: 10px;
+  height: 200px;
+}
+#sec-1 h2 {
+  padding-top: 10px;
+  text-align: center;
+}
+#box {
+  text-align: center;
+}
+
+#sec-1 .icon {
+  margin: 10px 4px 10px;
+  width: 135px;
+  height: 135px;
+  display: inline-block;
+  background-color: orange;
+  border-radius: 100%;
+}
+.heading h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+#box {
+  text-align: center;
+  display: inline-flex;
+  padding-left: 10px;
+}
+#box1,
+#box2 {
+  height: 300px;
+  width: 44vw;
+  margin-left: 2vw;
+}
+#box1 {
+  background-color: gray;
+  color: white;
+}
+#box1 h2 {
+  margin-top: 144px;
+}
+#box2 .artical {
+  background-color: chocolate;
+  margin-bottom: 15px;
+  padding: 31px 0px;
+  color: white;
+}
+
+#sec-3 {
+  margin: 10px 0px 10px;
+}
+.box {
+  text-align: center;
+}
+.box .innerbox {
+  display: inline-flex;
+  margin: 0px 10px 0px;
+  width: 125px;
+  height: 175px;
+  background-color: orangered;
+}
+#footer h2 {
+  padding-top: 10px;
+  color: white;
+  text-align: center;
+}
+
+#footer {
+  margin-left: 20px;
+  width: 91vw;
+  height: 50px;
+  background-color: lightpink;
+  margin-bottom: 10px;
+}
