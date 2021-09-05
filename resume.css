@@ -1,0 +1,49 @@
+body {
+  background-image: linear-gradient(
+    to bottom right,
+    blue,
+    red,
+    pink skyblue,
+    purple
+  );
+  background-repeat: space;
+}
+#image {
+  margin: 50px 0px 30px;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+#top #img {
+  text-align: center;
+}
+.sec-heading {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.box {
+  display: inline-flex;
+}
+.box li {
+  margin-left: 10px;
+  color: white;
+}
+.sec-heading {
+  width: 92vw;
+  text-align: center;
+  background-color: rgb(75, 75, 75);
+  padding: 10px;
+}
+.box h3 {
+  background-color: rgb(88, 87, 87);
+  padding: 10px;
+  margin-left: 10px;
+}
+ul {
+  padding: 20px;
+  width: 42vw;
+}
+.box li {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: goldenrod;
+}

@@ -1,0 +1,44 @@
+h1 {
+  text-align: center;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  height: 200px;
+  border: solid rgb(219, 13, 13);
+}
+.high {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+#first {
+  font-size: 20px;
+  background-color: #33ffbd;
+  border: solid #f50fa5;
+}
+#second {
+  font-size: 30px;
+  background-color: #d20ff5;
+  border: solid #0f32f5;
+}
+#third {
+  font-size: 30px;
+  background-color: #f50f7e;
+  border: solid lightcoral;
+}
+#fourth {
+  font-size: 30px;
+  background-color: #f5c90f;
+  border: solid lightskyblue;
+}
+#fifth {
+  font-size: 30px;
+  background-color: #0f1ef5c0;
+  border: solid rgb(241, 13, 13);
+}
+.gra {
+  text-align: center;
+}
