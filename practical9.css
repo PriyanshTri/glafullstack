@@ -1,0 +1,264 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+header {
+  width: 100%;
+  height: 70px;
+  background-color: darkcyan;
+  padding: 0 20px;
+  color: white;
+}
+header h2 {
+  float: left;
+  text-transform: uppercase;
+  line-height: 70px;
+}
+header .menu {
+  list-style: none;
+  float: right;
+  text-transform: uppercase;
+}
+.menu li {
+  display: inline-block;
+  line-height: 70px;
+}
+.menu li a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding: 0 20px;
+}
+.menu li a:hover,
+.show-btn:hover,
+.hide-btn:hover {
+  color: brown;
+  transition: 0.4s;
+}
+.show-btn,
+.hide-btn {
+  font-size: 20px;
+  line-height: 70px;
+  display: none;
+}
+.show-btn {
+  float: right;
+}
+#chk {
+  position: absolute;
+  visibility: hidden;
+  z-index: -10;
+}
+
+@media (max-width: 979px) {
+  .show-btn,
+  .hide-btn {
+    display: block;
+  }
+  .menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    text-align: center;
+    padding: 80px 0;
+    transition: 0.7s;
+    line-height: normal;
+  }
+  #chk:checked ~ .menu {
+    right: 0;
+  }
+  .menu li {
+    display: block;
+    padding: 20px 0;
+  }
+  .menu li a {
+    display: block;
+  }
+  .hide-btn {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+  }
+}
+
+.banner img {
+  width: 100%;
+  max-width: 900px;
+  display: block;
+  margin: auto;
+}
+.fab {
+  margin-right: 5px;
+}
+
+.fas {
+  margin-right: 5px;
+}
+h1 {
+  font-size: xx-large;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+.box1 {
+  display: inline-flex;
+  width: 100%;
+}
+.circle1 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  height: 180px;
+  width: 25%;
+  margin: 30px;
+  background-image: url(..//Images/cartoon2.jpeg);
+  border: 2px solid black;
+}
+.circle2 {
+  border-radius: 50%;
+  height: 180px;
+  width: 25%;
+  margin: 30px;
+  background-image: url(..//Images/circle2.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 2px solid black;
+}
+.circle3 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  height: 180px;
+  width: 25%;
+  margin: 30px;
+  background-image: url(..//Images/circle3.jpeg);
+  border: 2px solid black;
+}
+.circle4 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 2px solid black;
+  border-radius: 50%;
+  height: 180px;
+  width: 25%;
+  margin: 30px;
+  background-image: url(..//Images/cartoon1.png);
+}
+
+.container1 {
+  display: inline-flex;
+  align-items: center;
+  width: 100%;
+}
+.maincontent {
+  color: white;
+  padding: 10px;
+  margin-left: 10px;
+  height: 400px;
+  width: 50%;
+  background-color: gray;
+  overflow: scroll;
+}
+.rectangle {
+  height: 400px;
+  width: 50%;
+}
+.artical1 {
+  border: 2px solid gray;
+  background-image: url(..//Images/artical1.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 126px;
+  width: 100%;
+  margin: 10px;
+  padding: 40px;
+}
+.artical2 {
+  border: 2px solid gray;
+  background-image: url(..//Images/artical2.jpeg);
+  background-position: center;
+  background-size: cover;
+  height: 126px;
+  width: 100%;
+  margin: 10px;
+  padding: 40px;
+}
+.artical3 {
+  border: 2px solid gray;
+  background-image: url(..//Images/artical3.jpeg);
+  background-position: center;
+  background-size: cover;
+  height: 126px;
+  width: 100%;
+  margin: 10px;
+  padding: 40px;
+}
+
+#container {
+  display: inline-flex;
+  width: 100%;
+}
+
+.box {
+  margin: 30px;
+  padding: 10px;
+  background-color: lightgray;
+  width: 25%;
+  height: 380px;
+  overflow: hidden;
+  box-shadow: 10px 5px 5px gray;
+  border-radius: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  text-align: justify;
+}
+.link {
+  display: block;
+  background-color: bisque;
+  text-decoration: none;
+  margin-top: 10px;
+  border: 2px solid black;
+  border-radius: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 4px 20px;
+}
+.heading {
+  margin-top: 0;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.link:hover {
+  background-color: brown;
+  color: white;
+}
+.box img {
+  width: 100%;
+  height: 150px;
+  border-radius: 10px;
+}
+
+footer {
+  background-color: gray;
+  height: 60px;
+  text-align: center;
+}
+
+/* @media (max-width:864px) {
+    .box1{
+    display:block;
+    width: 100%;
+}
+#container{
+    display: block;
+    
+    
+}
+.container1{
+    display: block;
+}
+} */
