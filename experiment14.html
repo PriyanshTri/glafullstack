@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Experiment 14</title>
+    <link rel="stylesheet" href="experiment14.css" />
+  </head>
+  <body>
+    <div class="preloader">
+    
+      <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" class="lds-ripple" style="background:0 0"><circle cx="50" cy="50" r="4.719" fill="none" stroke="#1d3f72" stroke-width="2"><animate attributeName="r" calcMode="spline" values="0;40" keyTimes="0;1" dur="3" keySplines="0 0.2 0.8 1" begin="-1.5s" repeatCount="indefinite"/><animate attributeName="opacity" calcMode="spline" values="1;0" keyTimes="0;1" dur="3" keySplines="0.2 0 0.8 1" begin="-1.5s" repeatCount="indefinite"/></circle><circle cx="50" cy="50" r="27.591" fill="none" stroke="#5699d2" stroke-width="2"><animate attributeName="r" calcMode="spline" values="0;40" keyTimes="0;1" dur="3" keySplines="0 0.2 0.8 1" begin="0s" repeatCount="indefinite"/><animate attributeName="opacity" calcMode="spline" values="1;0" keyTimes="0;1" dur="3" keySplines="0.2 0 0.8 1" begin="0s" repeatCount="indefinite"/></circle></svg>
+      <h1>Loader</h1>
+    </div>
+    <div id="container">
+      <div class="text">
+        <h1>COUNTER</h1>
+      </div>
+      <div class="counter">
+        <div class="button" id="minus">-</div>
+        <h3 class="count" id="count"></h3>
+        <div class="button" id="plus">+</div>
+      </div>
+    </div>
+    <script>
+      var counter = 0;
+      var minus = document.getElementById("minus");
+      var count = document.getElementById("count");
+      count.innerHTML = counter;
+      if (counter == 0) {
+        minus.style.color = "grey";
+      }
+      minus.addEventListener("click", function () {
+        if (counter > 0) {
+          counter--;
+          document.getElementById("count").innerHTML = counter;
+        }
+        if (counter == 0) {
+          minus.style.color = "grey";
+        }
+      });
+      var plus = document.getElementById("plus");
+      plus.addEventListener("click", function () {
+        counter++;
+        count.innerHTML = counter;
+        if (counter > 0) {
+          minus.style.color = "black";
+        }
+      });
+      // document.getElementById("loader").style.visibility = "hidden";
+      const preloader = document.querySelector(".preloader");
+
+      const fadeEffect = setInterval(() => {
+        // if we don't set opacity 1 in CSS, then   //it will be equaled to "", that's why we   // check it
+        if (!preloader.style.opacity) {
+          preloader.style.opacity = 1;
+        }
+        if (preloader.style.opacity > 0) {
+          preloader.style.opacity -= 0.1;
+        } else {
+          clearInterval(fadeEffect);
+        }
+      }, 200);
+
+      window.addEventListener("load", fadeEffect);
+    </script>
+  </body>
+</html>
